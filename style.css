@@ -7,8 +7,10 @@
 
 html {
     overflow-x: hidden;
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 html::-webkit-scrollbar {
@@ -95,6 +97,7 @@ body {
 
 .header-section img {
     margin-top: 10%;
+    margin-left: 2%;
 }
 
 .header-section ul {
@@ -106,12 +109,13 @@ body {
     margin-right: 10vh;
 }
 
-.logo {
-    margin-left: 2%;
-}
-
 .header-section a {
     text-decoration: none;
+}
+
+.header-section li:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 300ms;
 }
 
 .header-section li,
@@ -628,7 +632,7 @@ textarea {
     width: 100%;
 }
 
-/*--- End of Locations page ---*/
+/*--- End of Contact page ---*/
 
 /*--- Start of About page ---*/
 
@@ -744,14 +748,23 @@ textarea {
     z-index: 1;
 }
 
-.ourmenu-container{
+.menu-bg3 {
+    background-image: url(images/menubg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 295vh;
+    z-index: 1;
+}
+
+.ourmenu-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 5%;
 }
 
-.buttons{
+.buttons {
     display: flex;
     gap: 17%;
     justify-content: center;
@@ -765,11 +778,11 @@ textarea {
     margin-top: 10%;
 }
 
-.img-title{
+.img-title {
     width: 50%;
 }
 
-.buttons button{
+.buttons button {
     background: #171717;
     border-radius: 30px;
     padding: 2% 1%;
@@ -777,8 +790,8 @@ textarea {
     border: none;
 }
 
-.buttons .active{
-    background: rgba(52, 18, 18, 0.95) !important; 
+.buttons .active {
+    background: rgba(52, 18, 18, 0.95) !important;
 }
 
 .buttons a {
@@ -786,3 +799,5 @@ textarea {
     text-align: left;
     font: 400 42px 'Poppins', sans-serif;
 }
+
+/*--- End of Menu Page ---*/
